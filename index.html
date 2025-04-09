@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +36,38 @@
       font-size: 1.2rem;
       font-weight: bold;
       white-space: nowrap;
+    }
+    
+    /* Navigation styling */
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #222;
+      position: sticky;
+      top: 83px; /* Adjusted based on header height */
+      z-index: 999;
+    }
+    
+    .nav-menu a {
+      padding: 0.5rem 1.5rem;
+      margin: 0 0.5rem;
+      background-color: #333;
+      color: #f0f0f0;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .nav-menu a:hover {
+      background-color: #66ccff;
+      color: #111;
+    }
+    
+    .nav-menu a.active {
+      background-color: #444;
+      border-bottom: 2px solid #66ccff;
     }
 
     section {
@@ -124,6 +157,12 @@
     <div class="name">Omkar Mahesh Deshmukh</div>
   </header>
 
+  <!-- Added Navigation Menu -->
+  <div class="nav-menu">
+    <a href="index.html" class="active">Awards & Achievements</a>
+    <a href="work-samples.html">Work Samples</a>
+  </div>
+
   <section id="section1">
     <div class="carousel">
       <div class="carousel-item"><img src="img1.jpg" alt="Image 1"></div>
@@ -210,3 +249,4 @@
   </script>
 </body>
 </html>
+
